@@ -1,0 +1,46 @@
+.section{
+  padding-top: 115px;
+  padding-bottom: 102px;
+  background-color: #1C1C1C;
+
+  &__list{
+    list-style-type: none;
+    @include box;
+
+  }
+
+  &__item{
+    width: 262px;
+    overflow:hidden;
+    background: #312F30;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__heading{
+    padding-top: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__text{
+    padding-top: 13px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.7;
+  }
+
+  &__img{
+    width: 262px;
+    height: 175px;
+    transition:  1s ease;
+    &:hover{
+      transform:scale(1.1);
+
+    }
+  }
+}

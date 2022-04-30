@@ -1,0 +1,32 @@
+.hero{
+    padding-top: 186px;
+
+  &__title{
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+  }
+
+  &__heading{
+    margin: 0;
+    font-weight: 500;
+    font-size: 57.33px;
+    line-height: 67px;
+    color: #FFFFFF;
+
+  }
+
+  &__text{
+    width: 523px;
+    padding-top: 37px;
+    padding-bottom: 42px;
+    font-weight: 400;
+    opacity: 0.7;font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+}
