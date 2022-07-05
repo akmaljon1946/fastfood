@@ -1,0 +1,46 @@
+.menu-load{
+  background-color: #312F30;
+
+
+  &__inner{
+    @include box;
+    padding: {
+      top: 61px;
+      bottom: 60px;
+      left: 80px;
+      right: 80px;
+    }
+  
+  }
+
+  &__heading{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+  }
+
+  &__btn{
+    width: 165px;
+    height: 49px;
+    background: #F6762C;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border: 1px solid #F6762C;
+    color: #FFFFFF;
+
+    &:hover{
+      color: #F6762C;
+      background: #ffffff;
+      transition: all 355ms ease;
+    }
+  }
+}
+   
+
+
+  
+
