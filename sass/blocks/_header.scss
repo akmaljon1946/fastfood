@@ -1,53 +1,68 @@
 .large-container {
-  background-image: url(../images/bigburger.png);
-  background-repeat: no-repeat;
-  width: 1600px;
-  height: 885px;
-  background-size:contain;
+    background-image: url(../images/bigburger.png);
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 885px;
+    background-size: contain;
 }
 
+.header {
+    @include box;
 
-.header{
-  @include box;
+    &__link {
+        @include link;
+        margin-right: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        opacity: 0.7;
 
-  &__link{
-    @include link;
-    margin-right: 28px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    opacity: 0.7;
+        &:hover {
+            color: #ffffff;
+            opacity: 1;
+            transition: all 355ms ease;
+        }
 
-    &:hover{
-      color: #ffffff;
-      opacity: 1;
-      transition: all 355ms ease;
+        // &:last-child {
+        //     margin-right: 0;
+        // }
     }
 
-    &:last-child{
-      margin-right: 0;
+    &__button {
+        width: 165px;
+        height: 49px;
+        border: 1px solid #f6762c;
+        background-color: #f6762c;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        &:hover {
+            background-color: #ffffff;
+            color: #f6762c;
+            transition: all 1s ease;
+        }
     }
-  }
-
-  &__button{
-    width: 165px;
-    height: 49px;
-    border: 1px solid #F6762C;
-    background-color: #F6762C;
-    border-radius: 5px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    &:hover{
-      background-color: #ffffff;
-      color: #F6762C;
-      transition: all 1s ease;
-    }
-  }
 }
-  
 
+@media only screen and (max-width: 778px) {
+    .large-container {
+        background-size: 840px;
+        width: 778px;
+        height: auto;
+        padding-bottom: 8px;
+    }
 
+    .header {
+        &__button {
+            margin-right: 20px;
+            width: 110px;
+            height: 35px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}

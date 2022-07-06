@@ -45,3 +45,25 @@
         opacity: 0.5;
     }
 }
+
+// responsive
+
+@media only screen and(max-width:778px) {
+    .king {
+        &__img {
+            width: 349px;
+            height: 299px;
+        }
+
+        &__heading {
+            padding-bottom: 14px;
+            font-size: 33px;
+            line-height: 40px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}

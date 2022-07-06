@@ -1,105 +1,113 @@
-.menu{
-  background-color: #1C1C1C;
+.menu {
+    background-color: #1c1c1c;
 
-  &__box{
-    padding-top: 150px;
-    padding-bottom: 146px;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  &__queen{
-    display: flex;
-    align-items:center;
-    justify-content: end;
-    background-image: url(../images/latte.png);
-    width: 555px;
-    height: 300px;
-  }
-  &__hut{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    background-image: url(../images/pizzatuna.png);
-    width: 555px;
-    height: 300px;
-
-  }
-
-  &__king{
-    display: flex;
-    align-items:center;
-    justify-content: end;
-    background-image: url(../images/cheesburg.png);
-    width: 555px;
-    height: 300px;
-  }
-  &__john{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    background-image: url(../images/burito.png);
-    width: 555px;
-    height: 300px;
-  }
-
-  &__heading{
-    padding-bottom: 20px;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
-    color: #FFFFFF;
-
-  }
-
-  &__text{
-    width: 250px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    opacity: 0.7;
-  }
-
-  &__price{
-    padding-top: 11px;
-    padding-bottom: 11px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    color: #F6762C;
-    
-  }
-
-  del{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    opacity: 0.5;
-  }
-
-  &__btn{
-    width: 141px;
-    height: 39px;
-    border: 1px solid #F6762C;
-    background-color: #F6762C;
-    border-radius: 5px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    cursor:pointer;
-    color: #FFFFFF;
-    &:hover{
-      background-color: #ffffff;
-      color: #F6762C;
-      transition: all 1s ease;
+    &__box {
+        padding-top: 150px;
+        padding-bottom: 146px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
-  }
 
+    &__queen {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-image: url(../images/latte.png);
+        width: 555px;
+        height: 300px;
+    }
+    &__hut {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        background-image: url(../images/pizzatuna.png);
+        width: 555px;
+        height: 300px;
+    }
+
+    &__king {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-image: url(../images/cheesburg.png);
+        width: 555px;
+        height: 300px;
+    }
+    &__john {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        background-image: url(../images/burito.png);
+        width: 555px;
+        height: 300px;
+    }
+
+    &__heading {
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        color: #ffffff;
+    }
+
+    &__text {
+        width: 250px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        opacity: 0.7;
+    }
+
+    &__price {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        color: #f6762c;
+    }
+
+    del {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        width: 141px;
+        height: 39px;
+        border: 1px solid #f6762c;
+        background-color: #f6762c;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        cursor: pointer;
+        color: #ffffff;
+        &:hover {
+            background-color: #ffffff;
+            color: #f6762c;
+            transition: all 1s ease;
+        }
+    }
 }
 
+// responsive
+
+@media only screen and(max-width:778px) {
+    .menu {
+        &__box {
+            gap: 40px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            justify-content: center;
+        }
+    }
+}

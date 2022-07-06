@@ -1,98 +1,101 @@
-.testimonial{
-  background-color: #1C1C1C;
-  padding-bottom: 194px;
+.testimonial {
+    background-color: #1c1c1c;
+    padding-bottom: 194px;
 
-  &__inner{
-    padding-left: 175px;
-    padding-right: 110px;
-    @include box;
-  }
-  
-  &__left{
-    position: relative;
-    width: 346px;
-    height: 346px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px dashed rgba(246, 118, 44, 0.3);
-  }
-
-  &__box{
-    width: 230px;
-    height: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px dashed rgba(246, 118, 44, 0.3);
-  }
-
-  &__photo{
-    width: 85px;
-    height: 85px;
-    position: absolute;
-    top: 30px;
-    left: -10px;
-  }
-  &__blond{
-    width: 71px;
-    height: 71px;
-    position: absolute;
-    top: -15px;
-    right: 25px;
-  }
-  &__boy{
-    width: 77px;
-    height: 77px;
-    position: absolute;
-    bottom: -9px;
-    left: 55px;
-  }
-  &__girl{
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    bottom: 36px;
-    right: 0;
-  }
-
-  .blockquote{
-    text-align: center;
-    color: aliceblue;
-
-    &__text{
-      width: 368px;
-      padding-top: 37px;
-      padding-bottom: 27px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      text-align: center;
-      color: #FFFFFF;
-      opacity: 0.7;
+    &__inner {
+        padding-left: 175px;
+        padding-right: 110px;
+        @include box;
     }
 
-    cite{
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
-      font-style: normal;
-      color: #FFFFFF;
+    &__left {
+        position: relative;
+        width: 346px;
+        height: 346px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px dashed rgba(246, 118, 44, 0.3);
     }
 
-    &__job{
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      text-align: center;
-      color: #FFFFFF;
-      opacity: 0.7;
-      
+    &__box {
+        width: 230px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px dashed rgba(246, 118, 44, 0.3);
     }
 
+    &__photo {
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        top: 30px;
+        left: -10px;
+    }
+    &__blond {
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        top: -15px;
+        right: 25px;
+    }
+    &__boy {
+        width: 77px;
+        height: 77px;
+        position: absolute;
+        bottom: -9px;
+        left: 55px;
+    }
+    &__girl {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        bottom: 36px;
+        right: 0;
+    }
 
+    .blockquote {
+        text-align: center;
+        color: aliceblue;
 
-  }
+        &__text {
+            width: 368px;
+            padding-top: 37px;
+            padding-bottom: 27px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0.7;
+        }
+
+        cite {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            font-style: normal;
+            color: #ffffff;
+        }
+
+        &__job {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0.7;
+        }
+    }
+}
+
+// responsive
+
+@media only screen and(max-width:778px) {
+    .testimonial {
+    }
 }
