@@ -97,5 +97,38 @@
 
 @media only screen and(max-width:778px) {
     .testimonial {
+        padding-bottom: 100px;
+
+        &__inner {
+            padding-left: 100px;
+        }
+        &__photo {
+            width: 85px;
+            height: 85px;
+            position: absolute;
+            top: 30px;
+            left: -89px;
+        }
+        &__blond {
+            width: 71px;
+            height: 71px;
+            position: absolute;
+            top: -12px;
+            right: -29px;
+        }
+        &__boy {
+            width: 77px;
+            height: 77px;
+            position: absolute;
+            bottom: 34px;
+            left: -59px;
+        }
+        &__girl {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            bottom: 36px;
+            right: -50;
+        }
     }
 }
